@@ -1,0 +1,26 @@
+{
+  "name": "TestPlatform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "concurrently": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"cd opentestplatform-backend && node server.js\" \"cd opentestplatform-client && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DawidC/TestPlatform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DawidC/TestPlatform/issues"
+  },
+  "homepage": "https://github.com/DawidC/TestPlatform#readme"
+}
