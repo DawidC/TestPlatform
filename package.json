@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@types/node": "^14.0.1",
     "axios": "^0.19.2",
     "concurrently": "^5.2.0",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "concurrently \"cd opentestplatform-backend && node src/app.ts\" \"cd opentestplatform-client && npm start\"",
+    "start": "concurrently \"cd opentestplatform-backend && npm run dev\" \"cd opentestplatform-client && npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
