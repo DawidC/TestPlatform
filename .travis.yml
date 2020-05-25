@@ -3,7 +3,7 @@ node_js:
   - 12
 
 before_install:
-  - npm i -g tsc@version-number
+  - npm i -g tsc
 
 script:
   - cd opentestplatform-backend && npm run build
