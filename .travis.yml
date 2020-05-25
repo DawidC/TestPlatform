@@ -5,10 +5,11 @@ node_js:
 before_install:
   - npm i -g tsc
   - npm i -g create-react-app
+  - npm i -g react-scripts
 
 script:
-  - cd opentestplatform-backend && npm run build
-  - cd ../opentestplatform-client && npm run build
+  - cd opentestplatform-backend && npm i && npm run build
+  - cd ../opentestplatform-client && npm i && npm run build
 
 cache:
   npm: false
