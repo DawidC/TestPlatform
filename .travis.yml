@@ -4,6 +4,7 @@ node_js:
 
 before_install:
   - npm i -g tsc
+  - npm i -g create-react-app
 
 script:
   - cd opentestplatform-backend && npm run build
