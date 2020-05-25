@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - 12
 
+script:
+  - cd opentestplatform-backend && npm run build
+  - cd opentestplatform-client && npm run build
 
 cache:
   npm: false
