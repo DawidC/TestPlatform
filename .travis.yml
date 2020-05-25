@@ -2,9 +2,12 @@ language: node_js
 node_js:
   - 12
 
+before_install:
+  - npm i -g tsc@version-number
+
 script:
   - cd opentestplatform-backend && npm run build
-  - cd opentestplatform-client && npm run build
+  - cd ../opentestplatform-client && npm run build
 
 cache:
   npm: false
