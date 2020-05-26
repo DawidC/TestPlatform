@@ -7,7 +7,7 @@ before_install:
   - npm i -g react-scripts
 
 script:
-  - cd opentestplatform-backend && npm i && npm run build
+  - cd opentestplatform-backend && npm i && npm i typescript && npm run build
   - cd ../opentestplatform-client && npm i && npm run build
 
 cache:
