@@ -6,6 +6,7 @@ before_install:
   - npm i -g tsc
   - npm i -g create-react-app
   - npm i -g react-scripts
+  - npm i -g typescript
 
 script:
   - cd opentestplatform-backend && npm i && npm run build
