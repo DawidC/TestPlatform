@@ -3,7 +3,6 @@ node_js:
   - 12
 
 before_install:
-  - npm i -g tsc
   - npm i -g create-react-app
   - npm i -g react-scripts
   - npm i -g typescript
