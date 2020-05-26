@@ -8,7 +8,7 @@ before_install:
 
 script:
   - cd opentestplatform-backend && npm i && npm i typescript && npm run build
-  - cd ../opentestplatform-client && npm i && npm run build
+  - cd ../opentestplatform-client && npm i &&  CI=false npm run build
 
 cache:
   npm: false
