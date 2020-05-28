@@ -5,9 +5,10 @@ node_js:
 before_install:
   - npm i -g create-react-app
   - npm i -g react-scripts
+  - npm install -g concurrently
 
 script:
-  - cd opentestplatform-backend && npm i && npm i typescript && npm run build
+  - cd opentestplatform-backend && npm i && npm install ts-node --save-dev && npm install typescript --save-dev && npm i -g typescript && npm run build
   - cd ../opentestplatform-client && npm i &&  CI=false npm run build
 
 cache:
