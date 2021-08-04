@@ -4,10 +4,9 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: [ API-change-node-to-java ]
-  pull_request:
-    branches: [ API-change-node-to-java ]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '* * * * *'
 
 jobs:
   build:
