@@ -9,8 +9,8 @@ on:
 #     - cron:  '* * * * *'
   push:
     branches:
-      - API-change-node-to-java
-
+      - master
+      
 jobs:
   build:
 
