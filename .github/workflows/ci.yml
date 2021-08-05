@@ -4,9 +4,12 @@
 name: Java CI with Gradle
 
 on:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '* * * * *'
+#   schedule:
+#     # * is a special character in YAML so you have to quote this string
+#     - cron:  '* * * * *'
+  push:
+    branches:
+      - API-change-node-to-java
 
 jobs:
   build:
